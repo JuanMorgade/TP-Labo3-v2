@@ -1,0 +1,617 @@
+/* que tipo de red es la internet */
+/* cuales son los principales protocolos de internet */
+/* cuales son las capas de los protocolos tcp/ip*/
+/* modelo en el que esta basado la web : cliente servidor */
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: 'PT Serif', serif!important;
+    background-color: #e2ece9!important;
+}
+
+/* Globales */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.header__barra{
+    background-color: #fff;
+     height: 8rem;
+}
+
+.header__barra a:hover{
+    color: #7a7a7a;
+}
+
+.navbar-brand{
+    width: 10rem;
+    text-align: center;
+}
+ 
+.navegacion__enlace{
+     display: flex;
+     gap: 2rem;
+}
+.navegacion__enlace a, .navegacion__registro a{
+     color: #000;
+     text-decoration: none;
+}
+ 
+.navegacion__registro{
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+}
+.navbar-collapse{
+     align-items: stretch;
+}
+.container-fluid{
+     align-items: baseline;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+     display: flex;
+     flex-wrap: inherit;
+     align-items: center;
+     justify-content: space-between;
+     gap: 2rem;
+}
+
+.navbar-collapse {
+    background-color: #fff;
+    text-align: center;
+}
+
+
+/* NAVEGADOR */
+.header{
+    background-color: #fff !important;
+    padding: 1.5rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}  
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor img{
+    max-width: 20%;
+}
+
+
+
+.logo{
+    max-width: 8rem;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.menu_li{
+    
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.menu_li:hover{
+    color: #7e7a7a;
+}
+
+/* FIN DE NAVEGADOR */
+
+/* HOME */
+
+.sec{
+    padding: 7rem;
+    background-color: #e2ece9;
+}
+
+.sec_div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    align-items: center;
+}
+
+.sec_dic_txt {
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: justify;
+    font-size: 1.7rem;
+}
+.sec_dic_txt h1{
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sec_dic_txt a{
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    padding: .9rem;
+    background-color: #030A11;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.sec_dic_txt a:hover{
+    background-color: #091F34;
+    color: #fff;
+}
+
+.video{ 
+    background-color: #e2ece9;
+}
+.publi_tit h2{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+}
+
+.trailer{   
+    display: flex;
+    justify-content: center;
+}
+
+
+.principal_titulo h2{
+    margin-top: 6rem;
+    text-align: center;
+    font-weight: 750;
+    font-size: 2.4rem;
+}
+.principal_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.principal_grid_2{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.principal_grid img{
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.principal_grid_2 img{
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.principal_texto{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+/* FIN HOME */
+
+/* CONTACTOS */
+.fondo_form{
+    background-color: #e2ece9;
+}
+
+.tit_contacto h1{
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.formulario {
+    width: min( 60rem, 100% ); 
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 1.6rem;
+}
+.campo textarea {
+    height: 15rem;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.boton {
+    background-color:#e2ece9;
+    color: #000;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #000; 
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+/* Fin CONTACTOS */
+
+
+/* GALERIA */
+.fondo_galeria{
+    background-color: #e2ece9;
+}
+
+.tit_galeria h1{
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.galeria__grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 5rem;
+    row-gap: 5rem;
+    
+}
+
+.contenedor_g img{
+    max-width: 100%;
+}
+
+/* Fin GALERIA */
+
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #e2ece9;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.info_foot{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.info_foot .inf_fot{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #030A11;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.info_foot h2{
+    margin-bottom: 20px;
+    color: #030A11;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.info_foot a{
+    margin-top: 5px;
+    color: #030A11;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.info_foot a:hover{
+    opacity: 0.8;
+    color: #7a7a7a;
+}
+
+.info_foot a .fab{
+    font-size: 1.7rem;
+}
+
+.copy{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.copy p{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #030A11;
+}
+
+.copy hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/* fin Footer */
+
+
+/* HISTORIA */
+
+
+.contenedor_historia{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+   
+
+.hist{ 
+    margin: 3rem; 
+    font-size: 1.7rem;
+    text-align: justify;
+}
+.fot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.parrafo h1{
+    margin-top: 5rem;
+    text-align: center;
+   
+}
+.parrafo h2{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+.parrafo h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.parrafo h4{
+    text-align: center;
+}
+.fot p{
+    text-align: center;
+}
+.fot img{
+    
+    width: 70rem;
+    margin: 0 auto;
+}
+
+/* Fin HISTORIA */
+
+/* BANDA SONORA */
+.tit_banda h1{     
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.tit_banda h2{     
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.info_spoty{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+}
+@media (max-width: 576px){
+    .info_spoty{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.info_spoty_2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+    padding: 4rem;
+}
+@media (max-width: 576px){
+    .info_spoty_2{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+        
+        
+    } 
+}
+
+.musica p{
+    font-size: 2rem;
+    text-align: center;
+}
+.musica{
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+.spoty {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+
+
+/* FIN BANDA SONORA */
+
+/* MEDIAS */
+
+/*991
+//992
+//992
+
+*/
+@media(min-width: 991px){
+    .header__barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        align-items: center;
+    }
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px){
+    .sec_div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec_dic_txt a{
+        text-align: center;
+    }
+    .sec_div_img{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px){
+    .principal_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 576px){
+    .principal_grid_2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width :576px){
+    .galeria_grid{
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+}
+
+@media (min-width: 577px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem ;
+        column-gap: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .boton {
+        width: auto;
+    }
+}
+
+@media (max-width :576px){
+    .galeria__grid{
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+}
+
+
+
+/* fin MEDIAS */
